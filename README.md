@@ -1,9 +1,13 @@
 # Javascript Exercise: Conditionals and Data-Types
 
 ## Instructions
-1. Write your solution in `script.js`. Open `index.html` in your browser, which will run your code. Use your browser's console to examine any output where necessary. 
+1. Fork this repository, then clone it onto your system.
 
-2. Complete as many of the following exercises as you can in 40 minutes. Do prioritize the standard exercises over the bonus or extra ones. 
+2. Write your solution in `script.js`. Open `index.html` in your browser, which will run your code. Use your browser's console to examine any output where necessary. 
+
+3. Complete as many of the following exercises as you can in 40 minutes. Do prioritize the standard exercises over the bonus or extra ones. 
+
+4. When you are done, practise using git by using `git add .` to stage your changes, then `git commit -m 'your message'` to commit your changes, and `git push` to push your changes up to your repo. Next, create and submit a pull request on github.com. That will be the method by which our homework exercises will be submitted.
 
 ## Exercise 1
 Prompt the user for 2 numbers, then console.log their difference. For example, if the user gives the numbers 2 and 3, the result should be 1. If the user gives the numbers 3 and 2, the result should still
@@ -35,7 +39,9 @@ Examine the phonebook below.
 2. Prompt the user for a name and a number. Update the number corresponding to the name if the name exists in the phonebook.
 3. Prompt the user for a name and a number. If the name and number do not already exist in the phonebook, insert it into the phonebook.
 4. Prompt the user for a name. If the name exists in the phonebook, erase its record.
+
 __Bonus: Prompt the user for a number. If the number exists in the phonebook, show the name corresponding to it.__
+
 _Hint: The phonebook is a JS Object. Search Google / MDN for 'Javascript Object methods' to see if there might be something useful._
 
 ```

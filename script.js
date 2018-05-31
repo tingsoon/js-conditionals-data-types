@@ -10,16 +10,16 @@
 // ====================================================================
 // Write your solution below.
 // ====================================================================
+var numberOne = prompt("What is the first number?");
 
+var numberTwo = prompt("What is the second number?");
+ 
+numberOne = parseInt(numberOne);
+numberTwo = parseInt(numberTwo);
 
+var numberTotal = Math.abs(numberOne - numberTwo)
 
-
-
-
-
-
-
-
+console.log ("The difference is " + numberTotal + ".")
 
 
 
@@ -38,13 +38,41 @@
 // ====================================================================
 
 
+var number = prompt("Please enter a number.")
+
+for (i=0; i < number.length; i++) {
+	if (number.charAt(i) === true); {
+		continue;
+	}
+}
+
+var lastChar = number.charAt(i-1);
+
+var secondLastChar = number.charAt(i-2);
+
+// if secondLastChar = 1, must put th.
+
+number = parseInt(number);
+
+if (secondLastChar == "1") {
+	finalNumber = number + "th";
+	console.log ("The result is " + finalNumber);
+}
+
+//if 2nd last char is not equals to 1, can continue.
 
 
+ else if (lastChar == "1") {
+	finalNumber = number + "st";
+} else if (lastChar == "2") {
+	finalNumber = number + "nd"
+} else if (lastChar == "3") {
+	finalNumber = number + "rd"
+} else {
+	finalNumber = number + "th"
+}
 
-
-
-
-
+console.log ("The result is " + finalNumber);
 
 
 
@@ -61,8 +89,17 @@
 // Write your solution below.
 // =======================================================================
 
+var number = Math.floor((Math.random() * 10) + 1);
 
+var numberGuess = prompt ("Pick a number from 1 to 10.");
 
+numberGuess = parseInt(numberGuess);
+
+if (number === numberGuess) {
+	console.log("The numbers match!");
+} else {
+	console.log ("Please try again.")
+}
 
 
 
@@ -89,9 +126,20 @@
 // Write your solution below.
 // =====================================================================
 
+var stringLength = 6;
 
+function generateRandomString1(l) {
+    var chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var charsLength = chars.length;
+    var string = '';
 
+  	for(var i=0; i<l; i++)
+  		string += chars.charAt(Math.floor(Math.random() * charsLength));
 
+  	return string;
+}
+
+generateRandomString1(stringLength)
 
 
 
